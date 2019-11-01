@@ -1,2 +1,2 @@
 # InstaJsib
-A fast paced, quake-like, instagib JS first person shooter using WebGL. 
+A fast paced, quake-like, instagib JS top down shooter using WebGL and Phaser 3. 
