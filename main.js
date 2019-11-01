@@ -21,15 +21,17 @@ var game = new Phaser.Game(config);
 var cover;
 
 function preload() {
-    this.load.image('background', 'assets/background.png');
-    this.load.spritesheet('player', 'assets/player.png');
-    this.load.spritesheet('enemy', 'assets/enemy.png');
-    this.load.spritesheet('cpu', 'assets/enemygreyscale.png');
-    this.load.spritesheet('wall', 'assets/cover.png');
+    
 }
 
 function create() {
-    this.add.image(320, 240, imgbackground);
+    this.load.image('background', './assets/background.png');
+    this.load.spritesheet('player', './assets/player.png');
+    this.load.spritesheet('enemy', './assets/enemy.png');
+    this.load.spritesheet('cpu', './assets/enemygreyscale.png');
+    this.load.spritesheet('wall', './assets/cover.png');
+
+    this.add.image(320, 240, 'background');
 
     cover = this.physics.add.staticGroup();
     cover.create(400, 320, 'wall');
